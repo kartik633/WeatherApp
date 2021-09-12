@@ -115,7 +115,13 @@ body{
 }
 
 .main_header_right figure img{
-  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3)); 
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+}
+
+.errimg img
+{
+  width:60rem;
+  height: 50rem;   
 }
 
 /* footer code */
