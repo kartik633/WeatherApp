@@ -158,7 +158,7 @@ body{
 }
 
 .tempInformation{
-  width: 40rem;
+  width: 50rem;
   margin: auto;
   min-height: 20rem;
   background-color: #323544;
@@ -263,6 +263,20 @@ footer p{
   .main_header_right{
     height: auto;
     margin-top: 3rem;
+  }
+
+  .temp_form{
+    width: auto;
+  }
+
+  .tempInformation{
+    width: auto;
+  }
+
+  .main_layer .middle_layer p,
+  .main_layer .middle_layer .fa{
+    font-size: 5rem;
+    font-weight: 900;
   }
 
 }

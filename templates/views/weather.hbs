@@ -25,10 +25,10 @@
             <p id="day">Tuesday</p>
             <p id="today_data">13 OCT</p>
           </div>
-          <div class="main_layer">
+          <div class="main_layer ">
             <p id="city_name">Get Output Here</p>
             <div class="middle_layer data_hide">
-                <p id = "temp"><span>0</span> <sup>o</sup> C</p>
+                <p id = "temp"><span id = "temp_real_val">0</span> <sup>o</sup> C</p>
                 <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
             </div>
 
@@ -40,7 +40,33 @@
 
   {{>footer}}
 
+  <script src="js/main.js">
 
+  </script>
+
+  <script>
+
+
+  const getCurrentDay = () =>{
+    let weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+
+    let currentTime = new Date();
+    let days = weekday[currentTime.getDay()];
+    let day = document.getElementById('day');
+
+    day.innerText = days;
+  }
+
+  getCurrentDay();
+
+  </script>
 
 </body>
 
